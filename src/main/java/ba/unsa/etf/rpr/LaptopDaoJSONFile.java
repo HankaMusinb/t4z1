@@ -1,9 +1,9 @@
 package ba.unsa.etf.rpr;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.exc.StreamReadException;
+//import com.fasterxml.jackson.core.JsonProcessingException;
+//import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DatabindException;
+//import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
@@ -39,7 +39,7 @@ public class LaptopDaoJSONFile implements LaptopDao {
         for (Laptop l : laptopi) {
             if (l.getProcesor().equals(procesor)) return l;
         }
-        throw new NeodgovarajuciProcesorException("Laptop sa datim procesorom ne postoji");
+        throw new NeodgovarajuciProcesorException("Laptop sa navedenim procesorom ne postoji");
     }
 
     @Override

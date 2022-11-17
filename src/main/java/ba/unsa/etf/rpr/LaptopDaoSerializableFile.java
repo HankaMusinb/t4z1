@@ -33,7 +33,7 @@ public class LaptopDaoSerializableFile implements LaptopDao{
         for(Laptop l : laptopi){
             if(l.getProcesor().equals(procesor)) return l;
         }
-        throw new NeodgovarajuciProcesorException("Laptop sa datim procesorom ne postoji");
+        throw new NeodgovarajuciProcesorException("Laptop sa navedenim procesorom ne postoji");
     }
 
     @Override
